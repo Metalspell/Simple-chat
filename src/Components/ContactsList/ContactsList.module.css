@@ -97,6 +97,6 @@
 }
 
 .contactsList::-webkit-scrollbar-thumb {
-  background: rgba(175, 248, 3, 0.911);
+  background: antiquewhite;
   border-radius: 3px;
 }
