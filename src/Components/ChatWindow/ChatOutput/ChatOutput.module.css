@@ -1,0 +1,63 @@
+.mainWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  background-size: cover;
+  overflow-y: scroll;
+  backdrop-filter: blur(3px);
+}
+
+.mainWrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.mainWrapper::-webkit-scrollbar-thumb  {
+  background: rgba(175, 248, 3, 0.911);
+  border-radius: 3px;
+}
+
+.myMessages {
+  color: rgba(3, 3, 3, 0.651);
+  padding: 10px 20px 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background: #00F07C;
+  max-width: 60%;
+  min-width: 130px;
+  box-shadow: 0 0 10px 0 #00F07C;
+  margin-left: 2%;
+}
+
+.selectContactMessages {
+  padding: 10px 20px 20px;
+  margin-left: auto;
+  background: rgba(0,184,212,1);
+  box-shadow: 0 0 10px 0 rgba(0,184,212,1);
+  color: #000;
+  max-width: 60%;
+  min-width: 130px;
+  border-radius: 15px;
+  color: azure;
+}
+
+.selectContactMessages span,
+.myMessages span {
+  display: block;
+  text-align: end;
+  font-size: 10px;
+}
+
+.invitationWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.invitation {
+  font-size: 4vw;
+  color: aquamarine;
+}

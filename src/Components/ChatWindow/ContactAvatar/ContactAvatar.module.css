@@ -1,0 +1,71 @@
+.mainWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid aqua;
+  backdrop-filter: blur(3px);
+}
+
+.selectContactInfo {
+  display: flex;
+  height: 100%;
+  width: 30%;
+  min-width: 250px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.selectedUserName {
+  width: 100%;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 50%;
+  background-size: 100%;
+  background-color: aliceblue;
+  margin-left: 5%;
+}
+
+.name {
+  color: aliceblue;
+  font-size: 16px;
+  margin-left: 10%;
+}
+
+.name span {
+  color: aliceblue;
+  display: inline;
+  font-size: 1vw;
+  clip-path: inset(0 3ch 0 0);
+  animation: spin 1s steps(4) infinite;
+}
+
+@keyframes spin {
+  to {
+    clip-path: inset(0 -1ch 0 0)
+  }
+}
+
+.hidingMenu {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  background-image: url('../../../Images/white-hamburger-menu-icon-25.jpg');
+  background-size: cover;
+  display: none;
+}
+
+.hidingMenuHide {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .hidingMenu {
+    display: inherit;
+  }
+}

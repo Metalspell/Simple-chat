@@ -1,0 +1,93 @@
+.button,
+.buttonGoogle {
+  background-image: linear-gradient(#F39200 0%, #E4032E 100%);
+  width: 20vw;
+  height: 4vw;
+  border-radius: 50px !important;
+  cursor: pointer;
+  font-size: 1vw;
+}
+
+.buttonGoogle {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  display: grid;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 8;
+  grid-row-end: 10;
+}
+
+.button:hover {
+  box-shadow: 1px 10px 50px -1px #e5032e !important;
+}
+
+.button[type=submit][disabled] {
+  box-shadow: none !important;
+  background-blend-mode: overlay;
+}
+
+.buttonTitle {
+  font-size: 1.3vw;
+  font-family: "Inter";
+  font-weight: 800;
+  margin: 0;
+}
+
+.buttonArrow,
+.buttonArrowDisabled {
+  width: 2vw;
+  height: 2vw;
+  margin-left: 1vw;
+  color: #ffffff;
+}
+
+.buttonArrowDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+@media (max-width: 1024px) {
+
+  .button,
+  .buttonGoogle {
+    height: 6vw;
+    width: 25vw;
+  }
+
+  .buttonGoogle {
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  .buttonTitle {
+    font-size: 2vw;
+  }
+
+  .buttonArrow {
+    width: 4vw;
+    height: 3vw;
+    margin-left: 1vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .button,
+  .buttonGoogle {
+    height: 12vw;
+    width: 60vw;
+    border-radius: 10px !important;
+  }
+
+  .buttonTitle {
+    font-size: 4vw;
+  }
+
+  .buttonArrow {
+    width: 6vw;
+    height: 5vw;
+    margin-left: 2vw;
+  }
+}

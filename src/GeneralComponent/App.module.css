@@ -1,0 +1,6 @@
+.mainContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: url('../Images/Andromeda_Galaxy_560mm_FL.jpg') center center / cover no-repeat;
+}

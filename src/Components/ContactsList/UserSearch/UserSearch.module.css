@@ -1,0 +1,26 @@
+.searchSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  border-bottom: 1px solid azure;
+}
+
+.searchInput {
+  padding: 1vw 9vw;
+  margin: 1vw 0vw;
+  border-color: #fff;
+  background: url('../../../Images/icons8-поиск.gif') 20px center no-repeat;
+  background-size: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 1vw;
+}
+
+@media (max-width: 700px) {
+  .searchInput {
+    padding: 3vw 25vw;
+    font-size: 3vw;
+    border-radius: 40px;
+  }
+}
