@@ -8,8 +8,8 @@ const App = () => {
   return (
     <section className={style.mainContainer}>
       <Router>
-        <Route exact path="/" component={Authentication} />
-        <Route exact path="/main" component={Main} />
+        <Route exact path="/Simple-chat" component={Authentication} />
+        <Route exact path="/Simple-chat/main" component={Main} />
       </Router>
     </section>
   );
