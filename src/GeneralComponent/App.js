@@ -10,7 +10,7 @@ const App = () => {
       <Router>
         <Route exact path="/Simple-chat/" component={Authentication} />
         <Route exact path="/Simple-chat/main" component={Main} />
-        <Route exact path="/Simple-chat/?/main" component={Main} />
+        <Route exact path="?/Simple-chat/main" component={Main} />
       </Router>
     </section>
   );
