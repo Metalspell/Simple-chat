@@ -8,18 +8,20 @@ import { authAction } from "../../Redux-store/Actions/authAction";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import { useSelector } from 'react-redux';
 
 const Authentication = (props) => {
+  const authData = useSelector(store => store.auth);
   const dispatch = useDispatch();
   const [userLogin, setUserLogin] = useState('');
 
   firebase.initializeApp({
-    apiKey: "AIzaSyDp0YagVgeNQXpmQCV7qyzEZ8DwquGj3h4",
-    authDomain: "auth-example-24715.firebaseapp.com",
-    projectId: "auth-example-24715",
-    storageBucket: "auth-example-24715.appspot.com",
-    messagingSenderId: "766819906578",
-    appId: "1:766819906578:web:f5a08923573a3e6dd594cb"
+    apiKey: "AIzaSyDlX6IJbH2ukAVgyoyz7LcUJYbdI9XKYYU",
+    authDomain: "my-project-1535470760105.firebaseapp.com",
+    projectId: "my-project-1535470760105",
+    storageBucket: "my-project-1535470760105.appspot.com",
+    messagingSenderId: "675008876732",
+    appId: "1:675008876732:web:6880977df4233f608dc0b9"
   });
 
   const auth = firebase.auth();

@@ -91,3 +91,10 @@
     margin-left: 2vw;
   }
 }
+
+@media (max-width: 480px) {
+  .buttonGoogle {
+    grid-row-start: 8;
+    grid-row-end: 10;
+  }
+}

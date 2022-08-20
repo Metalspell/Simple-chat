@@ -86,3 +86,14 @@
 .formField:focus::placeholder {
   color: transparent;
 }
+
+@media (max-width: 480px) {
+  .label {
+    font-size: 7vw;
+  }
+  .formField {
+    margin: 10vw 0vw 6vw 0vw;
+    width: 90%;
+    font-size: 4vw;
+  }
+}
