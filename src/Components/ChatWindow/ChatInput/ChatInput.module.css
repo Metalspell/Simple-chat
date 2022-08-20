@@ -23,4 +23,28 @@
   background-size: 5%;
   background-repeat: no-repeat;
   background-position: 95% center;
+  box-shadow: 0 0 10px 0 #00f07c;
+}
+
+.sendButton {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .formWrapper {
+    justify-content: space-around;
+  }
+  .input {
+    width: 60%;
+  }
+  .sendButton {
+    display: block;
+    padding: 0% 10%;
+    border-radius: 30px;
+    background-color: #00F07C;
+    color: rgba(3, 3, 3, 0.651);
+    box-shadow: 0 0 10px 0 #00f07c;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }

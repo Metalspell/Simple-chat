@@ -64,6 +64,14 @@ const ChatInput = () => {
           value={message}
           onChange={e => setMessage(e.target.value)}
         />
+        <button
+          type='submit'
+          className={style.sendButton}
+          value={message}
+          onClick={e => setMessage(e.target.value)}
+        >
+          Send
+        </button>
       </form>
     </section>
   )
