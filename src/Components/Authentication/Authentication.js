@@ -2,7 +2,7 @@ import { withRouter } from "react-router-dom";
 import classes from './SubmitButton/SubmitButton.module.css';
 import SubmitButton from "./SubmitButton/SubmitButton";
 import style from './Authentication.module.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { authAction } from "../../Redux-store/Actions/authAction";
 import firebase from 'firebase/compat/app';
@@ -36,7 +36,6 @@ const Authentication = (props) => {
     }
 
     dispatch(authAction(user));
-    props.history.push("/Simple-chat/main");
   };
 
   const onSubmit = (e) => {
@@ -47,10 +46,15 @@ const Authentication = (props) => {
         userLogin
       }
       dispatch(authAction(user));
-      props.history.push("/Simple-chat/main");
     }
     setUserLogin('');
   };
+
+  useEffect(() => {
+    if (authData.userLogin !== '') {
+      props.history.push("/Simple-chat/main");
+    }
+  }, [authData.userLogin, props.history])
 
   return (
     <>

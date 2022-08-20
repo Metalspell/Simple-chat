@@ -5,11 +5,13 @@ import dataContext from '../../Context/DataProvider';
 import React, { useEffect } from 'react';
 import EachContact from "./EachContact/EachContact";
 import menuStatusContext from "../../Context/MenuStatusProvider";
+import { useDispatch } from 'react-redux';
+import { authAction } from "../../Redux-store/Actions/authAction";
 
 const Contacts = () => {
   const nikname = useSelector(store => store.auth);
   const [contacts] = React.useContext(dataContext);
-
+  const dispatch = useDispatch();
   const [menuStatus, setMenuStatus] = React.useContext(menuStatusContext);
 
   useEffect(() => {
@@ -21,11 +23,26 @@ const Contacts = () => {
     window.addEventListener("resize", handleResize, false);
   }, [setMenuStatus]);
 
+  const exit = () => {
+    let userLogin = '';
+    const user = {
+      userLogin
+    }
+    dispatch(authAction(user));
+  }
+
   return (
     <section className={menuStatus ? style.mainWrapperMobile : style.mainWrapper}>
       <article className={style.userInfoWrapper}>
         <div className={style.contactItemAvatar}></div>
         <h3 className={style.contactItemName}>{nikname.userLogin}</h3>
+        <button
+          type="submit"
+          className={style.logOutButton}
+          onClick={exit}
+        >
+          Log Out
+        </button>
         <div className={menuStatus ? style.hidingMenuHide : style.hidingMenu} onClick={() => setMenuStatus(!menuStatus)}></div>
       </article>
       <UserSearch />
