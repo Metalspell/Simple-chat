@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Simple-chat/static/css/main.a31fa3b1.css",
-    "main.js": "/Simple-chat/static/js/main.d0bf3989.js",
+    "main.css": "/Simple-chat/static/css/main.9b86f4ca.css",
+    "main.js": "/Simple-chat/static/js/main.49724fdb.js",
     "static/js/787.48e6b504.chunk.js": "/Simple-chat/static/js/787.48e6b504.chunk.js",
     "static/media/Andromeda_Galaxy_560mm_FL.jpg": "/Simple-chat/static/media/Andromeda_Galaxy_560mm_FL.9c8758459e70313cd587.jpg",
     "static/media/corvin_by_pti_spb-d71d252 (1).jpg": "/Simple-chat/static/media/corvin_by_pti_spb-d71d252 (1).980a7fee44319022f11c.jpg",
@@ -10,12 +10,12 @@
     "static/media/download.png": "/Simple-chat/static/media/download.621e09f3fd84fb0ae503.png",
     "static/media/png-transparent-computer-icons-symbol-send-email-button-miscellaneous-blue-angle.png": "/Simple-chat/static/media/png-transparent-computer-icons-symbol-send-email-button-miscellaneous-blue-angle.25bca321383acac28224.png",
     "index.html": "/Simple-chat/index.html",
-    "main.a31fa3b1.css.map": "/Simple-chat/static/css/main.a31fa3b1.css.map",
-    "main.d0bf3989.js.map": "/Simple-chat/static/js/main.d0bf3989.js.map",
+    "main.9b86f4ca.css.map": "/Simple-chat/static/css/main.9b86f4ca.css.map",
+    "main.49724fdb.js.map": "/Simple-chat/static/js/main.49724fdb.js.map",
     "787.48e6b504.chunk.js.map": "/Simple-chat/static/js/787.48e6b504.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a31fa3b1.css",
-    "static/js/main.d0bf3989.js"
+    "static/css/main.9b86f4ca.css",
+    "static/js/main.49724fdb.js"
   ]
 }
