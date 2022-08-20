@@ -34,7 +34,7 @@ const Authentication = (props) => {
     }
 
     dispatch(authAction(user));
-    props.history.push("./Simple-chat/main");
+    props.history.push("/Simple-chat/main");
   };
 
   const onSubmit = (e) => {
@@ -45,7 +45,7 @@ const Authentication = (props) => {
         userLogin
       }
       dispatch(authAction(user));
-      props.history.push("./Simple-chat/main");
+      props.history.push("/Simple-chat/main");
     }
     setUserLogin('');
   };
