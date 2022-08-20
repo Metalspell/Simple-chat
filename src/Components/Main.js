@@ -9,6 +9,7 @@ const Main = (props) => {
   
   useEffect(() => {
     if (authData.userLogin === '') {
+      console.log(props.history)
       props.history.push("/Simple-chat");
     }
   }, [authData.userLogin, props.history]);
