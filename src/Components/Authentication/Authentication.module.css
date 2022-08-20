@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.userNameForm{
+.userNameForm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +72,7 @@
   border: 0;
   outline: 0;
   font-size: 1.4vw;
-  color: white;
+  color: rgba(255, 255, 255, 1);
   padding: 0vw 0vw 1.5vw 0vw;
   background: transparent;
   transition: border-color 0.2s;

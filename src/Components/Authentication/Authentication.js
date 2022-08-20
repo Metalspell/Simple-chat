@@ -28,11 +28,9 @@ const Authentication = (props) => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
     let userLogin = auth._delegate.currentUser.displayName;
-
     const user = {
       userLogin
     }
-
     dispatch(authAction(user));
     props.history.push("./Simple-chat/main");
   };

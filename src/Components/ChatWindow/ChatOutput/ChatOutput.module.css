@@ -20,7 +20,7 @@
 
 .myMessages {
   color: rgba(3, 3, 3, 0.651);
-  padding: 10px 20px 20px;
+  padding: 25px 30px;
   margin-top: 20px;
   border-radius: 15px;
   background: #00F07C;
@@ -31,15 +31,16 @@
 }
 
 .selectContactMessages {
-  padding: 10px 20px 20px;
   margin-left: auto;
   background: rgba(0,184,212,1);
   box-shadow: 0 0 10px 0 rgba(0,184,212,1);
+  padding: 25px 30px;
   color: #000;
   max-width: 60%;
   min-width: 130px;
   border-radius: 15px;
   color: azure;
+  margin-right: 2%;
 }
 
 .selectContactMessages span,

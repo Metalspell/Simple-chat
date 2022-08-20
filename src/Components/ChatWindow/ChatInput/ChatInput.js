@@ -48,7 +48,9 @@ const ChatInput = () => {
     }
   }
 
-  useEffect(() => localStorage.setItem('contacts', JSON.stringify(contacts)), [contacts]);
+  useEffect(() => {
+    localStorage.setItem('correspondenceData', JSON.stringify(contacts));
+  }, [contacts]);
 
   return (
     <section className={style.mainWrapper}>

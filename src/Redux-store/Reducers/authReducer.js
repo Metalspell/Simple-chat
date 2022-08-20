@@ -1,4 +1,4 @@
-const initialStore = JSON.parse(localStorage.getItem('user')) || {
+const initialStore = JSON.parse(localStorage.getItem('userAuthInfo')) || {
   userLogin: ''
 }
 

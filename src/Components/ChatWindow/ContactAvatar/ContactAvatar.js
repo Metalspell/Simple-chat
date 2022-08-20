@@ -38,7 +38,7 @@ const ContactAvatar = ({ selectContact }) => {
             <h3 className={style.name}>{selectContact.name}</h3>
           }
           {typingStatus ?
-            <h3 className={style.name}>is typing<span>...</span></h3>
+            <p className={style.typingStatus}>is typing<span>...</span></p>
             :
             null
           }

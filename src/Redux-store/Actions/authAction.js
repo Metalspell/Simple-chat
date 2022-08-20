@@ -1,6 +1,6 @@
 export const authAction = (userLogin) => async dispatch => {
 
-  localStorage.setItem('user', JSON.stringify(userLogin));
+  localStorage.setItem('userAuthInfo', JSON.stringify(userLogin));
 
   dispatch({
     type: 'AUTH',
