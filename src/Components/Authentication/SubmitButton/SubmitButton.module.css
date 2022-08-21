@@ -20,7 +20,8 @@
   grid-row-end: 10;
 }
 
-.button:hover {
+.button:hover,
+.buttonGoogle:hover {
   box-shadow: 1px 10px 50px -1px #e5032e !important;
 }
 
